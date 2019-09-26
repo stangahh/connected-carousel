@@ -1,5 +1,28 @@
-<div class="container">
-  <h1 class="title">
-    {{ 'PAGES.HOME.TITLE' | translate }}
-  </h1>
-</div>
+<ngb-carousel class="carousel" *ngIf="images">
+<ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img [src]="images[0]" alt="Random first slide">
+    </div>
+    <div class="carousel-caption">
+      <h3>First</h3>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img [src]="images[1]" alt="Random second slide">
+    </div>
+    <div class="carousel-caption">
+      <h3>Second</h3>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="carousel-item video active">
+      <video class="video-fluid" autoplay loop muted>
+        <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="carousel-caption">
+      <h3>Third</h3>
+    </div>
+  </ng-template>
+</ngb-carousel>
