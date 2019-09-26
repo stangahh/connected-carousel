@@ -1,18 +1,21 @@
 {
-  "name": "angular-electron",
+  "name": "connected-carousel",
   "version": "6.1.0",
-  "description": "Angular 8 with Electron (Typescript + SASS + Hot Reload)",
-  "homepage": "https://github.com/maximegris/angular-electron",
+  "description": "Connected carousel",
+  "homepage": "https://github.com/stangahh/connected-carousel",
   "author": {
-    "name": "Maxime GRIS",
-    "email": "maxime.gris@gmail.com"
+    "name": "Jesse Stanger",
+    "email": "jesse.stanger@gmail.com"
   },
   "keywords": [
     "angular",
     "angular 8",
     "electron",
     "typescript",
-    "sass"
+    "sass",
+    "windows",
+    "mac",
+    "linux"
   ],
   "main": "main.js",
   "private": true,
@@ -22,6 +25,7 @@
     "postinstall:electron": "node postinstall",
     "ng": "ng",
     "start": "npm run postinstall:electron && npm-run-all -p ng:serve electron:serve",
+    "browser": "npm run ng:serve:web",
     "build": "npm run postinstall:electron && npm run electron:serve-tsc && ng build",
     "build:dev": "npm run build -- -c dev",
     "build:prod": "npm run build -- -c production",

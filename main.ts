@@ -20,6 +20,9 @@ function createWindow() {
     webPreferences: {
       nodeIntegration: true,
     },
+    fullscreen: true,
+    kiosk: true,
+    autoHideMenuBar: true
   });
 
   if (serve) {
