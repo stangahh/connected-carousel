@@ -13,7 +13,7 @@ Connected Carousel
 Clone this repository locally :
 
 ``` bash
-git clone https://github.com/stangahh/connected-carousel.git
+git clone https://github.com/stangahh/connected-kiosk-carousel.git
 ```
 
 Install dependencies with npm :

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "connected-carousel": {
+    "connected-kiosk-carousel": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -65,21 +65,21 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "connected-carousel:build"
+            "browserTarget": "connected-kiosk-carousel:build"
           },
           "configurations": {
             "dev": {
-              "browserTarget": "connected-carousel:build:dev"
+              "browserTarget": "connected-kiosk-carousel:build:dev"
             },
             "production": {
-              "browserTarget": "connected-carousel:build:production"
+              "browserTarget": "connected-kiosk-carousel:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "connected-carousel:build"
+            "browserTarget": "connected-kiosk-carousel:build"
           }
         },
         "test": {
@@ -113,7 +113,7 @@
         }
       }
     },
-    "connected-carousel-e2e": {
+    "connected-kiosk-carousel-e2e": {
       "root": "e2e",
       "projectType": "application",
       "architect": {
@@ -131,7 +131,7 @@
       }
     }
   },
-  "defaultProject": "connected-carousel",
+  "defaultProject": "connected-kiosk-carousel",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",

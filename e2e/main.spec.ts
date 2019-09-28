@@ -3,7 +3,7 @@ import {SpectronClient} from 'spectron';
 
 import commonSetup from './common-setup';
 
-describe('connected-carousel App', function () {
+describe('connected-kiosk-carousel App', function () {
   commonSetup.apply(this);
 
   let browser: any;
