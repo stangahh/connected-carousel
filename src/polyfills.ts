@@ -55,9 +55,16 @@
 /***************************************************************************************************
  * Zone JS is required by default for Angular itself.
  */
-import 'zone.js/dist/zone';  // Included with Angular CLI.
-
+import 'zone.js/dist/zone'; // Included with Angular CLI.
 
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+
+// Angular 6+ Support
+// Currently, the newest versions of Angular (6+) do not include shims for ‘global’ or ‘process’ which were provided in previous versions.
+// https://aws-amplify.github.io/docs/js/angular
+(window as any).global = window;
+(window as any).process = {
+  env: { DEBUG: undefined },
+};

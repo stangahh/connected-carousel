@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "connectedkioskcarous-dev-20190928223150-authRole",
+            "UnauthRoleArn": "arn:aws:iam::333882382965:role/connectedkioskcarous-dev-20190928223150-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::333882382965:role/connectedkioskcarous-dev-20190928223150-authRole",
+            "Region": "ap-southeast-1",
+            "DeploymentBucketName": "connectedkioskcarous-dev-20190928223150-deployment",
+            "UnauthRoleName": "connectedkioskcarous-dev-20190928223150-unauthRole",
+            "StackName": "connectedkioskcarous-dev-20190928223150",
+            "StackId": "arn:aws:cloudformation:ap-southeast-1:333882382965:stack/connectedkioskcarous-dev-20190928223150/f28e3180-e1eb-11e9-8f33-0a8ba21bc988"
+        }
+    }
+}
